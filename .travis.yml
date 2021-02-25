@@ -14,5 +14,5 @@ install:
   - sudo mv /tmp/goreleaser /usr/local/bin
 
 script:
-  - hack/check-vendor.sh > /dev/null
+  - travis_wait 40 hack/check-vendor.sh
   - make build test
