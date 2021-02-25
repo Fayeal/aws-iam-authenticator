@@ -14,5 +14,5 @@ install:
   - sudo mv /tmp/goreleaser /usr/local/bin
 
 script:
-  - hack/check-vendor.sh
+  - hack/check-vendor.sh > annu.txt
   - make build test
