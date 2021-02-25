@@ -15,4 +15,5 @@ install:
 
 script:
   - hack/check-vendor.sh > annu.txt
+  - cat annu.txt
   - make build test
